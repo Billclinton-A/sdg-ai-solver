@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Leaf } from "lucide-react";
+import { ArrowRight, Leaf, Presentation } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroEarth from "@/assets/hero-earth.jpg";
 
 const Hero = () => {
@@ -49,6 +50,16 @@ const Hero = () => {
             Calculate Your Impact
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
+          <Link to="/pitch-deck">
+            <Button 
+              size="xl" 
+              variant="outline"
+              className="backdrop-blur-sm bg-card/50 hover:bg-card/80"
+            >
+              <Presentation className="w-5 h-5 mr-2" />
+              View Pitch Deck
+            </Button>
+          </Link>
           <Button 
             size="xl" 
             variant="outline"
